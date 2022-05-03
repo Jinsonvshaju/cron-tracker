@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/cron-tracker/static/css/main.f07c62e4.css",
+    "main.js": "/cron-tracker/static/js/main.9daf1265.js",
+    "static/media/logo-login-new.svg": "/cron-tracker/static/media/logo-login-new.b88b064a5ac00a87ac7a637aa6c5ee95.svg",
+    "index.html": "/cron-tracker/index.html",
+    "main.f07c62e4.css.map": "/cron-tracker/static/css/main.f07c62e4.css.map",
+    "main.9daf1265.js.map": "/cron-tracker/static/js/main.9daf1265.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f07c62e4.css",
+    "static/js/main.9daf1265.js"
+  ]
+}
