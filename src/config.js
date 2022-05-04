@@ -1,6 +1,6 @@
 module.exports = {
   api: {
-    base_url: "http://localhost:9000",
+    base_url: "https://cron-tracker-api.herokuapp.com",
   },
   clients: {
     jpm: {
