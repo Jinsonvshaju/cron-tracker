@@ -1,4 +1,4 @@
-## How to test Demo?
+## How to test Demo version?
 ```
  Go to Demo: https://lovely-bunny-e6bc4f.netlify.app/. Click CRON tab in the window, click Choose file button and select tracker.csv, or another testing csv.
  Press upload button, then you can see uploaded data as table.
