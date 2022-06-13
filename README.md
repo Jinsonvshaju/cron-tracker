@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Demo: https://lovely-bunny-e6bc4f.netlify.app/home
+## How to test Demo?
+```
+ Click CRON tab in the window, click Choose file button and select tracker.csv, or another testing csv.
+ Press upload button, then you can see uploaded data as table.
+ Go home, and you can see the red and green boxes. Red boxes indicate the future triggers. By clicking the box,
+ we can find the respective triggers as table.
+ Green box indicate the past events.
+ Also provided a cron validator. In the cron tab, in the bottom left corner, we can find "validate cron" text box.
+ Please type any cron. We get real time details regarding that cron.
+```
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# What is a Cron Expressions?
+```
+ Cron expressions are used to configure instances of CronTrigger, a subclass of org.quartz.Trigger. A cron expression is a string consisting of six or seven subexpressions (fields) that describe individual details of the schedule.
+ Help: https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm
+```
+---
+# Spring boot and Cron Expression
+```
+CronExpression replaces CronSequenceGenerator, which is based on java.util.Calendar and which has several known issues that none of the Spring team members felt comfortable solving. Introducing a new type allowed us to use the superior java.time APIs, solve the outstanding issues, and (hopefully) introduce new features as well. While Spring generally prefers to maintain backward compatible, sometimes we do believe that starting from scratch is the best option.
+Help: https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions
+```
+---
+# Purpose of this project
+```
+ In a single project, we may require more than one cron expression.
+ But keep track of every trigger will be very difficult.
+ There is also time zone dependency which makes more complex to track all the cron expression.
+ This project help us to track all the cron expression using a calendar interface.
+ We can upload a file which contain all the cron and time zone information.
+```
+---
 
-## Available Scripts
+# How this app works?
+## Back-end
+### Back-end is powered by Node js and Express JS.
+#### Helper libraries
+##### https://github.com/datasert/cronjs
+##### https://www.npmjs.com/package/cronstrue
 
-In the project directory, you can run:
+## Front-end
+### Front-end is powered by React js.
+#### Helper libraries
+##### https://fullcalendar.io/docs/react
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+# Uploading csv format
+```
+CRON and TIME_ZONE are really important. We can introduce or remove any other columns
+```
+---
+# Thank you
